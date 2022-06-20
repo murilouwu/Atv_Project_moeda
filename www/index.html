@@ -4,10 +4,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css" />
   <script src="components/loader.js"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+    <div class="uk-background-secondary uk-width-1-1 uk-padding-small uk-flex uk-flex-center uk-flex-middle uk-flex-column" style="border-bottom: 6px solid #f0506e;">
+        <img src="https://assets.website-files.com/526b33100b597d107a00023c/526b3ee6af9de361710001a9_Top-Menu-Red-Monkey-Home.png" style="height: 15vh; width: auto;">
+        <h1 class="uk-text-bolder uk-text-danger">PAPOCHIMONEY</h1>
+    </div>
+    <div class="uk-container uk-text-bolder uk-text-danger uk-padding-large">
+        <fieldset class="uk-fieldset uk-flex uk-flex-column">
+            <legend class="uk-legend">Converter</legend>
+            <form class="uk-padding-small uk-flex uk-flex-center uk-flex-column">
+                <input class="uk-input uk-text-danger" type="text">
+                <h4 class="uk-text-bolder uk-text-danger">minha moeda é</h4>
+                <select id="select" class="uk-select uk-text-danger">
+                    
+                </select>
+                <h4 class="uk-text-bolder uk-text-danger">quero converter para</h4>
+                <select id="select2" class="uk-select uk-text-danger">
+                    
+                </select>
+                <hr>
+                <button id="buscar" class="uk-button uk-button-danger">Converter</button>
+            </form>
+        </fieldset>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
+    <script src="java.js"></script>
 </body>
 </html>
