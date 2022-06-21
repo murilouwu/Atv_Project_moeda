@@ -7,13 +7,16 @@ window.onload = ()=>{
         mode:'cors',
         cache:'default'
     }
-    fetch('https://economia.awesomeapi.com.br/json/all',opcoes)
+    fetch('https://economia.awesomeapi.com.br/json/available/uniq',opcoes)
     .then(
         response => { response.json()
                 .then(data =>{
-                    for(let i=0; i<data.length; i++){
-                        div.innerHTML += "<option>";
-                    };
+                    /*for(let i; i<data.length; i++){
+                        div.innerHTML += "<option value='"+data[i]+"'>"+data[i]+"</option>";
+                        div2.innerHTML += "<option value='"+data[i]+"'>"+data[i]+"</option>";
+                        
+                        console.log("a");
+                    };*/
                 })
         }
     );
