@@ -13,7 +13,7 @@
         <img src="https://assets.website-files.com/526b33100b597d107a00023c/526b3ee6af9de361710001a9_Top-Menu-Red-Monkey-Home.png" style="height: 15vh; width: auto;">
         <h1 class="uk-text-bolder uk-text-danger">PAPOCHIMONEY</h1>
     </div>
-    <div class="uk-container uk-text-bolder uk-text-danger uk-padding-large">
+    <div id="busca" class="uk-container uk-text-bolder uk-text-danger uk-padding-large">
         <fieldset class="uk-fieldset uk-flex uk-flex-column">
             <legend class="uk-legend">Cotação</legend>
             <form class="uk-padding-small uk-flex uk-flex-center uk-flex-column">
@@ -26,12 +26,27 @@
                     
                 </select>
                 <hr>
-                <button id="buscar" class="uk-button uk-button-danger">mostar</button>
+                <button id="buscar" onclick="resposta()" class="uk-button uk-button-danger">mostar</button>
             </form>
         </fieldset>
     </div>
-    <div id="resposta" class="uk-container uk-text-bolder uk-text-danger uk-padding-large">
-        
+    <div id="resposta" class="uk-container uk-text-bolder uk-text-danger uk-padding-large" style="display: none;">
+        <div class="uk-card uk-card-secondary uk-card-hover uk-card-body uk-flex uk-flex-center uk-flex-column" style="border-radius: 20px; border-top: solid 6px #f0506e; border-left: solid 6px #f0506e; border-right: solid 6px #f0506e;">
+            <h2 id="titulo" class="uk-card-title uk-text-bolder uk-text-danger"></h2>
+            <div class="uk-flex uk-flex-center uk-flex-column uk-text-danger">    
+                <label>Compra: <span id="sp1"></span></label>
+                <hr>
+                <label>Venda: <span id="sp2"></span></label>
+                <hr>
+                <label>Variação: <span id="sp3"></span></label>
+                <hr>
+                <label>Máximo: <span id="sp4"></span></label>
+                <hr>
+                <label>Minimo: <span id="sp5"></span></label>
+            </div>
+            <hr>
+            <button class="uk-button uk-button-danger" onclick="busca()">Voltar</button>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
