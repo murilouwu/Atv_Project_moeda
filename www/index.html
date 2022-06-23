@@ -13,24 +13,20 @@
         <img src="https://assets.website-files.com/526b33100b597d107a00023c/526b3ee6af9de361710001a9_Top-Menu-Red-Monkey-Home.png" style="height: 15vh; width: auto;">
         <h1 class="uk-text-bolder uk-text-danger">PAPOCHIMONEY</h1>
     </div>
-    <div class="uk-container uk-text-bolder uk-text-danger uk-padding-large">
+    <div id="busca" class="uk-container uk-text-bolder uk-text-danger uk-padding-large" style="display: flex;">
         <fieldset class="uk-fieldset uk-flex uk-flex-column">
             <legend class="uk-legend">Cotação</legend>
-            <form class="uk-padding-small uk-flex uk-flex-center uk-flex-column">
+            <div class="uk-padding-small uk-flex uk-flex-center uk-flex-column">
                 <h4 class="uk-text-bolder uk-text-danger">Cotação da Moeda:</h4>
-                <select id="select" class="uk-select uk-text-danger">
-
-                </select>
+                <select id="select" class="uk-select uk-text-danger"> </select>
                 <h4 class="uk-text-bolder uk-text-danger">Em relação:</h4>
-                <select id="select2" class="uk-select uk-text-danger">
-                    
-                </select>
+                <select id="select2" class="uk-select uk-text-danger"> </select>
                 <hr>
                 <button id="buscar" class="uk-button uk-button-danger"><span uk-icon="search"></span></button>
-            </form>
+            </div>
         </fieldset>
     </div>
-    <div class="uk-container uk-text-bolder uk-text-danger uk-padding-large">
+    <div id="resultado" class="uk-container uk-text-bolder uk-text-danger uk-padding-large" style="display: none;">
         <div class="uk-card uk-card-secondary uk-card-hover uk-card-body uk-flex uk-flex-center uk-flex-column" style="border-radius: 20px; border-top: solid 6px #f0506e; border-left: solid 6px #f0506e; border-right: solid 6px #f0506e;">
             <h2 id="titulo" class="uk-card-title uk-text-bolder uk-text-danger"></h2>
             <div class="uk-flex uk-flex-center uk-flex-column uk-text-danger">    
@@ -43,6 +39,7 @@
                 <label>Máximo: <span id="sp4"> </span></label>
                 <hr>
                 <label>Minimo: <span id="sp5"> </span></label>
+                <button id="voltar" class="uk-button uk-button-danger"><span uk-icon="reply"></span></button>
             </div>
             <hr>
         </div>
