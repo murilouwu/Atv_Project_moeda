@@ -1,3 +1,4 @@
+<h6>Mensagem no final do README</h6>
 # Projeto API cotação
 
 ## Style:
@@ -8,7 +9,6 @@
   <a href="https://docs.awesomeapi.com.br/api-de-moedas#retorna-moedas-selecionadas-atualizado-a-cada-30-segundos">API_Site<a>
 </fieldiset>
 <hr>
-<br>
 <br>
 <br>
 <br>
