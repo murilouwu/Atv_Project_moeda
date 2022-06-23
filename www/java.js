@@ -78,6 +78,20 @@ window.onload = ()=>{
                     }else{
                         //aviso que conversão não exite
                         document.querySelector('#titulo').innerHTML = "Não encontrado na API";
+                        //compra
+                        document.querySelector('#sp1').innerHTML = "";
+                        
+                        //venda
+                        document.querySelector('#sp2').innerHTML = "";
+                        
+                        //variação
+                        document.querySelector('#sp3').innerHTML = "";
+                        
+                        //maximo
+                        document.querySelector('#sp4').innerHTML = "";
+                        
+                        //minimo
+                        document.querySelector('#sp5').innerHTML = "";
                     }
                 })
             }
