@@ -13,7 +13,7 @@ window.onload = ()=>{
         mode:'cors',
         cache:'default'
     }
-    //buscar todas as moedas       
+    //buscar todas as moedas
     fetch(allcoin, opcoes)
     .then(
         response => { response.json()
@@ -36,6 +36,11 @@ window.onload = ()=>{
     let btn = document.querySelector('#buscar');
     //quando clickar
     btn.addEventListener('click', ()=>{
+        //sumir com os selects
+        document.querySelector('#busca').style.display = 'none';
+        //aparecer o card com as resposta
+        document.querySelector('#resultado').style.display = 'flex';
+        
         //codigo
         let cd = (div.value)+(div2.value);
         //buscando todas as conversoes
@@ -66,16 +71,24 @@ window.onload = ()=>{
                                     document.querySelector('#sp4').innerHTML = data[cd].high;
                                     
                                     //minimo
-                                    document.querySelector('#sp1').innerHTML = data[cd].low;     
+                                    document.querySelector('#sp5').innerHTML = data[cd].low;     
                                 })
                             }
                         );
                     }else{
                         //aviso que conversão não exite
-                        document.querySelector('#titulo').innerHTML = "Não foi encontrado tal conversão na API";
+                        document.querySelector('#titulo').innerHTML = "Não encontrado na API";
                     }
                 })
             }
         );
+    });
+
+    //quando clicar
+    document.querySelector('#voltar').addEventListener('click', ()=>{
+        //sumir com resposta
+        document.querySelector('#busca').style.display = 'flex';
+        //aparecer resultado
+        document.querySelector('#resultado').style.display = 'none';
     });
 };
